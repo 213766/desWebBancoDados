@@ -1,5 +1,5 @@
 <?php
-   $cracha = filter_input(INPUT_POST, "var_cracha");;
+   $cracha = filter_input(INPUT_POST, "var_cracha");
 
    include_once("../_conexao.php");
    $conexao = conectaBD();
