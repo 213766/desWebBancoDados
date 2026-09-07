@@ -65,7 +65,7 @@
       <?php }; ?>
 
    </table>
-   <h4><a href="./vendaInsert.html">Registar Venda</a></h4>
+   <h4><a href="./vendaInsert.php">Registar Venda</a></h4>
 
 </body>
 </html>
