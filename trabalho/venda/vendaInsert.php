@@ -95,14 +95,16 @@
 
         const tbody = document.getElementById("itensVenda");
         const vendedor = document.querySelector('[name="crachaVendedor"]').value;
-        const dtVenda = new Date(document.querySelector('[name="dataVenda"]').value + "T00:00:00");
-        const hoje = new Date();
-        hoje.setHours(0, 0, 0, 0);
 
-        if (dtVenda === "") {
+        const valorDtVenda = document.querySelector('[name="dataVenda"]').value;
+        if (valorDtVenda === "") {
             alert("Venda sem Data");
             return false;
         }
+
+        dtVenda = new Date(valorDtVenda + "T00:00:00");
+        const hoje = new Date();
+        hoje.setHours(0, 0, 0, 0);
 
         if (dtVenda > hoje) {
             alert("Data venda para frente");
